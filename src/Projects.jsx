@@ -15,7 +15,10 @@ function Projects() {
       <div className="grid grid-cols-1 lg:grid-cols-2 ml-5 p-12 gap-4 ">
         {projects.map((project) => {
           return (
-            <div className=" flex flex-col border rounded-2xl p-2 w-fit mx-auto">
+            <div
+              key={projects.id}
+              className=" flex flex-col border rounded-2xl p-2 w-fit mx-auto"
+            >
               <div className="justify-center flex p-2">
                 <img
                   src={project.logo}
@@ -32,7 +35,10 @@ function Projects() {
                 <div className="flex items-center justify-center flex-wrap max-w-sm gap-2 mt-2">
                   {project.technologies.map((element) => {
                     return (
-                      <div className="max-w-sm items-center justify-center p-2 border rounded-full text-white font-bold hover:text-orange-400 hover:border-orange-400 hover:cursor-pointer">
+                      <div
+                        key={element}
+                        className="max-w-sm items-center justify-center p-2 border rounded-full text-white font-bold hover:text-orange-400 hover:border-orange-400 hover:cursor-pointer"
+                      >
                         <span>{element}</span>
                       </div>
                     );
