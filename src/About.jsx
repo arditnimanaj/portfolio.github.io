@@ -34,7 +34,7 @@ function About() {
 
         <div className="max-w-md mr-4 max-sm:mx-4 max-sm:mt-4">
           <div className="flex flex-col gap-2">
-            <h1 className="font-lilita font-bold text-orange-400">
+            <h1 className=" font-bold text-orange-400">
               Languages / Framework
             </h1>
             <div className="flex flex-wrap gap-2 max-w-md">
@@ -49,9 +49,7 @@ function About() {
               })}
             </div>
 
-            <h1 className="font-lilita font-bold text-orange-400">
-              Currently learning
-            </h1>
+            <h1 className=" font-bold text-orange-400">Currently learning</h1>
             <div className="flex gap-2 max-w-md">
               {learningTechnologies.map((technology) => {
                 return (

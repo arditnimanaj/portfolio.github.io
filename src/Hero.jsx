@@ -78,7 +78,7 @@ function Hero() {
           src={profilePicture}
           className="w-[200px] rounded-full opacity-50 hover:opacity-100"
         />
-        <h1 className="font-lilita ">Hi, I'm Ardit.</h1>
+        <h1 className="font-bold">Hi, I'm Ardit.</h1>
         <span className="text-orange-400">Frontend Developer</span>
         <span className="w-full max-sm:w-[200px] max-sm:h-[55px]">
           <Typewriter
