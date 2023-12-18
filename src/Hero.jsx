@@ -67,7 +67,7 @@ function Hero() {
           </span>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/12KR_m5ZLX5JqKoaqOHbbrJ4TkLixaeDb/view?usp=sharing"
+            href="https://drive.google.com/file/d/1T4nlEt1KjPVJsZ6BFUISN2jD9ioSyRp1/view?usp=sharing"
           >
             <span className="font-bold">Resume</span>
           </a>
