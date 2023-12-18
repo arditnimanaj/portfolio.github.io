@@ -33,7 +33,7 @@ function Contact() {
             size="xl"
             className="hover:cursor-pointer text-orange-400 mb-[1px]"
           />
-          <span className="ml-4 text-3xl font-extrabold font-mono text-orange-400 max-sm:text-2xl">
+          <span className="ml-4 text-3xl font-extrabold font-mono text-orange-400 max-sm:text-xl">
             arditnimanaj@gmail.com
           </span>
         </a>

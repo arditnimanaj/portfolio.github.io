@@ -69,7 +69,7 @@ function Hero() {
             target="_blank"
             href="https://drive.google.com/file/d/12KR_m5ZLX5JqKoaqOHbbrJ4TkLixaeDb/view?usp=sharing"
           >
-            <span className="font-lilita">Resume</span>
+            <span className="font-bold">Resume</span>
           </a>
         </div>
       </div>

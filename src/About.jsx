@@ -18,7 +18,7 @@ function About() {
 
       <div className="flex justify-around w-full max-sm:flex-col">
         <div className="max-w-md max-sm:mx-4">
-          <span className="font-lilita text-lg">
+          <span className="text-lg">
             Greetings! I'm Ardit Nimanaj, a passionate and detail-oriented
             Website Developer on a journey to transform ideas into captivating
             digital experiences. Armed with a Bachelor's degree in Electrical
