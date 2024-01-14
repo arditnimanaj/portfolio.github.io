@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 function Projects() {
-  console.log(projects);
+  // console.log(projects);
   return (
-    <div className="ml-20 ">
+    <div className="ml-20 " id="projects">
       <h1 className="text-5xl text-white text-center">
         My Projects<span className="text-orange-400 ">.</span>
       </h1>

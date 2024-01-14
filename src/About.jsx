@@ -11,7 +11,10 @@ import { learningTechnologies } from "./data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function About() {
   return (
-    <div className="flex flex-col justify-center items-center text-white ml-24 my-20 gap-10">
+    <div
+      className="flex flex-col justify-center items-center text-white ml-24 my-20 gap-10"
+      id="about"
+    >
       <h1 className="text-5xl">
         About me<span className="text-orange-400 ">.</span>
       </h1>

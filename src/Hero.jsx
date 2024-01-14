@@ -9,10 +9,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { HashLink } from "react-router-hash-link";
 
 function Hero() {
   return (
-    <div id="#about" className="ml-20">
+    <div id="head" className="ml-20">
       <div className="flex w-full justify-between p-6">
         <div className="flex mr-14 gap-3 items-center">
           <a
@@ -94,11 +95,11 @@ function Hero() {
             }}
           />
         </span>
-        <a href="#contact">
+        <HashLink smooth to="#contact">
           <div className="hover:rounded-xl  hover:cursor-pointer border rounded-lg p-4 text-[#111827] hover:text-white bg-orange-400 font-bold text-lg border-orange-400">
             Contact Me
           </div>
-        </a>
+        </HashLink>
       </div>
     </div>
   );
