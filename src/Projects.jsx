@@ -2,7 +2,7 @@ import React from "react";
 import profilePicture from "./profilepic.jpg";
 import { projects } from "./data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 function Projects() {
   // console.log(projects);
@@ -22,7 +22,7 @@ function Projects() {
               <div className="justify-center flex p-2">
                 <img
                   src={project.logo}
-                  className="border rounded-2xl w-[300px] grayscale hover:grayscale-0 "
+                  className="border rounded-2xl w-[280px] h-[280px] object-contain grayscale hover:grayscale-0 bg-white "
                 />
               </div>
               <div className="flex flex-col items-center text-center">
@@ -52,6 +52,17 @@ function Projects() {
                       className="my-4 text-white hover:text-orange-400 hover:cursor-pointer"
                     />
                   </a>
+                  {project.youtubeLink != null ? (
+                    <a href={project.youtubeLink}>
+                      <FontAwesomeIcon
+                        icon={faYoutube}
+                        size="2xl"
+                        className="my-4 text-white hover:text-orange-400 hover:cursor-pointer"
+                      />
+                    </a>
+                  ) : (
+                    <></>
+                  )}
                   {project.hostedLink != null ? (
                     <a href={project.hostedLink}>
                       <FontAwesomeIcon

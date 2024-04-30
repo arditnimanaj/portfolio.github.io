@@ -8,7 +8,6 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { HashLink } from "react-router-hash-link";
 
 function Hero() {
@@ -18,6 +17,7 @@ function Hero() {
         <div className="flex mr-14 gap-3 items-center">
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/arditnimanaj"
             className="hover:cursor-pointer text-orange-400"
           >
@@ -30,6 +30,7 @@ function Hero() {
 
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://www.facebook.com/ardit.nimanaj.7/"
             className="hover:cursor-pointer text-orange-400"
           >
@@ -41,6 +42,7 @@ function Hero() {
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://www.linkedin.com/in/ardit-nimanaj-5224781b6/"
             className="hover:cursor-pointer text-orange-400"
           >
@@ -52,6 +54,7 @@ function Hero() {
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             href="mailto:arditnimanaj@gmail.com"
             className="hover:cursor-pointer text-orange-400"
           >
