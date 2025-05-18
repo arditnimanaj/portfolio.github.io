@@ -16,6 +16,7 @@ function App() {
     <div className=" bg-[#1F2937] flex">
       <Helmet>
         <meta charSet="utf-8" />
+        <title>ardit.dev</title>
       </Helmet>
       <SideBar />
       <div className="flex flex-col w-full">
