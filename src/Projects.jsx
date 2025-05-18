@@ -10,7 +10,7 @@ function Projects() {
         My Projects<span className="text-orange-400 ">.</span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ml-5 p-12 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ml-5 p-2 sm:p-12 gap-4 ">
         {projects.map((project) => {
           return (
             <div
