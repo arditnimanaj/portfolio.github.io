@@ -15,7 +15,7 @@ function Projects() {
           return (
             <div
               key={projects.id}
-              className=" flex flex-col border rounded-2xl p-2 w-fit min-w-[400px] mx-auto"
+              className=" flex flex-col border rounded-2xl p-2 w-fit mx-auto"
             >
               <div className="justify-center flex p-2">
                 <img
