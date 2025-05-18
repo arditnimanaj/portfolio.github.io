@@ -1,5 +1,3 @@
-import React from "react";
-import profilePicture from "./profilepic.jpg";
 import { projects } from "./data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -12,12 +10,12 @@ function Projects() {
         My Projects<span className="text-orange-400 ">.</span>
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 ml-5 p-12 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ml-5 p-12 gap-4 ">
         {projects.map((project) => {
           return (
             <div
               key={projects.id}
-              className=" flex flex-col border rounded-2xl p-2 w-fit mx-auto"
+              className=" flex flex-col border rounded-2xl p-2 w-fit min-w-[400px] mx-auto"
             >
               <div className="justify-center flex p-2">
                 <img

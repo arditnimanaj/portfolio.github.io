@@ -2,6 +2,9 @@ import bloodLogo from "./logos/blooddonation.jpg";
 import rentKOSLogo from "./logos/rentkoslogo.png";
 import biniLogo from "./logos/bininyc.png";
 import zekajLogo from "./logos/zekajlogo.png";
+import leoLogo from "./logos/LeoLogo.png"
+import shalaLogo from "./logos/shalaLogo.svg"
+
 export const projects = [
   {
     id: 1,
@@ -74,6 +77,33 @@ export const projects = [
     logo: zekajLogo,
     githubLink: "https://github.com/arditnimanaj/zekajmalergipser",
     hostedLink: "https://www.zekajmalergipser.de",
+  },
+  {
+    id: 5,
+    category: "Static Website",
+    name: "Shala Auto Body Repair",
+    technologies: [
+      "HTML/CSS",
+      "JavaScript",
+      "ReactJS",
+      "TailwindCSS",
+      "AntDesign",
+    ],
+    logo: shalaLogo,
+    githubLink: "https://github.com/arditnimanaj/bodyshop-nyc",
+    hostedLink: "https://www.shalaautorepair.com/",
+  },
+  {
+    id: 6,
+    category: "Wordpress Website",
+    name: "Leo Flachdachbau GMBH",
+    technologies: [
+      "JavaScript",
+      "Wordpress",
+      "HTML/CSS",
+    ],
+    logo: leoLogo,
+    hostedLink: "https://www.leo-flachdachbau.de/",
   },
 ];
 
