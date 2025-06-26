@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "./button";
 import { motion } from "framer-motion";
-import { Maiden_Orange } from "next/font/google";
 
 interface Items {
     href: string;
