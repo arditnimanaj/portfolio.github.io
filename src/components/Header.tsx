@@ -1,5 +1,5 @@
 'use client'
-import { items } from "@/data/data";
+import { menuItems } from "@/data/data";
 import Menu from "./ui/menu";
 import DarkModeToggle from "./ui/darkModeToggle";
 import { useTheme } from "next-themes";
@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <div className="flex flex-row justify-center items-center p-10">
-        <Menu items={items} />
+        <Menu items={menuItems} />
         <DarkModeToggle setDarkMode={toggleDarkMode} />
     </div>
   )
