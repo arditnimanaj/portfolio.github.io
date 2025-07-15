@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/ui/projects";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero/>
       <Stack/>
       <Projects/>
+      <Footer />
     </div>
   );
 }
