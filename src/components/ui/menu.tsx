@@ -1,10 +1,12 @@
-import Link from "next/link";
-import { Button } from "./button";
-import { motion } from "framer-motion";
+'use client';
+
+import Link from 'next/link';
+import { Button } from './button';
+import { motion } from 'framer-motion';
 import { useMediaQuery } from 'usehooks-ts';
-import { useState } from "react";
-import { Menu as MenuIcon, X as CloseIcon } from "lucide-react";
-import SocialMedia from "./socialMedia";
+import { useState } from 'react';
+import { Menu as MenuIcon, X as CloseIcon } from 'lucide-react';
+import SocialMedia from './socialMedia';
 
 interface Items {
   href: string;
@@ -27,29 +29,49 @@ export default function Menu({ items }: MenuProps) {
     <div>
       {isMobile ? (
         <>
-          <button
-            className="fixed top-4 left-4 z-50 p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 md:hidden"
-            onClick={() => setOpen(true)}
-            style={{ display: open ? 'none' : 'block' }}
-          >
-            <MenuIcon className="w-6 h-6" />
-          </button>
-          {open && (
-            <div className="fixed inset-0 z-40 bg-black/30" onClick={handleMenuClick} />
-          )}
-          <aside
-            className={`fixed top-0 left-0 h-full w-56 bg-white dark:bg-neutral-900 border-r border-gray-200 dark:border-neutral-800 flex flex-col items-center py-10 gap-4 z-50 transition-transform duration-300 ${open ? 'translate-x-0' : '-translate-x-full'}`}
-            style={{ pointerEvents: open ? 'auto' : 'none' }}
-          >
+          {/* Open menu button */}
+          {!open && (
             <button
-              className="absolute top-4 right-4 p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800"
-              onClick={() => setOpen(false)}
+              className="fixed top-4 left-4 z-50 p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 md:hidden"
+              onClick={() => setOpen(true)}
             >
-              <CloseIcon className="w-6 h-6" />
+              <MenuIcon className="w-6 h-6" />
             </button>
-            <div className="flex flex-col gap-4 w-full items-center flex-1">
+          )}
+
+          {/* Backdrop */}
+          {open && (
+            <div
+              className="fixed inset-0 z-40 bg-black/30"
+              onClick={handleMenuClick}
+            />
+          )}
+
+          {/* Sidebar */}
+          <aside
+            className={`fixed top-0 left-0 h-full w-64 bg-white dark:bg-neutral-900 border-r border-gray-200 dark:border-neutral-800 z-50 transform transition-transform duration-300 ${
+              open ? 'translate-x-0' : '-translate-x-full'
+            }`}
+          >
+            {/* Close button */}
+            <div className="flex justify-end p-4 border-b border-gray-200 dark:border-neutral-800">
+              <button
+                className="p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800"
+                onClick={() => setOpen(false)}
+              >
+                <CloseIcon className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Menu items */}
+            <nav className="flex flex-col items-center px-4 py-6 space-y-4">
               {items.map((item) => (
-                <Link href={item.href} key={item.name} className="w-full flex justify-center" onClick={handleMenuClick}>
+                <Link
+                  href={item.href}
+                  key={item.name}
+                  onClick={handleMenuClick}
+                  className="w-full flex justify-center"
+                >
                   <MotionButton
                     variant="outline"
                     className="w-44 hover:bg-orange-500 transition-colors dark:hover:bg-orange-500"
@@ -61,15 +83,16 @@ export default function Menu({ items }: MenuProps) {
                   </MotionButton>
                 </Link>
               ))}
-            </div>
-            {/* Social icons row */}
-            <div className="flex flex-row gap-4 mt-8 mb-2">
+            </nav>
+
+            {/* Social media */}
+            <div className="flex justify-center mt-auto pb-6">
               <SocialMedia />
             </div>
           </aside>
         </>
       ) : (
-        <div className="flex flex-row gap-12 sticky">
+        <div className="flex flex-row gap-12">
           {items.map((item) => (
             <Link href={item.href} key={item.name}>
               <MotionButton

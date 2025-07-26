@@ -33,7 +33,7 @@ export default function AboutPage() {
       </div>
 
       {/* Contact Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg">
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full max-w-lg">
         {/* Facebook */}
         <div className="flex items-center justify-center flex-col bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow hover:scale-[1.02] transition">
           <FaFacebook className="text-blue-600 dark:text-blue-400 text-3xl mb-2" />
