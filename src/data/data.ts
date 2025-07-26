@@ -21,15 +21,15 @@ export const menuItems = [
     name: "Home",
   },
   {
-    href: "/",
-    name: "Projects",
+    href: "/work",
+    name: "Work",
   },
   {
-    href: "/",
+    href: "/about",
     name: "About",
   },
   {
-    href: "/",
+    href: "/contact",
     name: "Contact",
   },
 ];

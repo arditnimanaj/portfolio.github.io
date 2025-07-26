@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { Button } from "./button";
 import { motion } from "framer-motion";
+import { useMediaQuery } from 'usehooks-ts';
+import { useState } from "react";
+import { Menu as MenuIcon, X as CloseIcon } from "lucide-react";
+import SocialMedia from "./socialMedia";
 
 interface Items {
-    href: string;
-    name: string;
+  href: string;
+  name: string;
 }
 
 interface MenuProps {
@@ -14,21 +18,73 @@ interface MenuProps {
 const MotionButton = motion(Button);
 
 export default function Menu({ items }: MenuProps) {
+  const isMobile = useMediaQuery('(max-width: 767px)');
+  const [open, setOpen] = useState(false);
+
+  const handleMenuClick = () => setOpen(false);
+
   return (
-    <div className="flex flex-row gap-12 sticky">
-      {items.map((item) => (
-        <Link href={item.href} key={item.name}>
-          <MotionButton
-            variant="outline"
-            initial={{ scale: 1.0 }}
-            whileHover={{ scale: 1.1}}
-            whileTap={{ scale: 0.95 }}
-            className="hover:bg-orange-500 transition-colors dark:hover:bg-orange-500"
+    <div>
+      {isMobile ? (
+        <>
+          <button
+            className="fixed top-4 left-4 z-50 p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 md:hidden"
+            onClick={() => setOpen(true)}
+            style={{ display: open ? 'none' : 'block' }}
           >
-            <h1>{item.name}</h1>
-          </MotionButton>
-        </Link>
-      ))}
+            <MenuIcon className="w-6 h-6" />
+          </button>
+          {open && (
+            <div className="fixed inset-0 z-40 bg-black/30" onClick={handleMenuClick} />
+          )}
+          <aside
+            className={`fixed top-0 left-0 h-full w-56 bg-white dark:bg-neutral-900 border-r border-gray-200 dark:border-neutral-800 flex flex-col items-center py-10 gap-4 z-50 transition-transform duration-300 ${open ? 'translate-x-0' : '-translate-x-full'}`}
+            style={{ pointerEvents: open ? 'auto' : 'none' }}
+          >
+            <button
+              className="absolute top-4 right-4 p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800"
+              onClick={() => setOpen(false)}
+            >
+              <CloseIcon className="w-6 h-6" />
+            </button>
+            <div className="flex flex-col gap-4 w-full items-center flex-1">
+              {items.map((item) => (
+                <Link href={item.href} key={item.name} className="w-full flex justify-center" onClick={handleMenuClick}>
+                  <MotionButton
+                    variant="outline"
+                    className="w-44 hover:bg-orange-500 transition-colors dark:hover:bg-orange-500"
+                    initial={{ scale: 1.0 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <span className="font-semibold">{item.name}</span>
+                  </MotionButton>
+                </Link>
+              ))}
+            </div>
+            {/* Social icons row */}
+            <div className="flex flex-row gap-4 mt-8 mb-2">
+              <SocialMedia />
+            </div>
+          </aside>
+        </>
+      ) : (
+        <div className="flex flex-row gap-12 sticky">
+          {items.map((item) => (
+            <Link href={item.href} key={item.name}>
+              <MotionButton
+                variant="outline"
+                className="w-full justify-start"
+                initial={{ scale: 1.0 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                {item.name}
+              </MotionButton>
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

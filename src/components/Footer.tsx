@@ -27,9 +27,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <nav className="flex gap-6 text-sm text-gray-700 dark:text-gray-300">
             <Link href="/">Home</Link>
+            <Link href="/work">Work</Link>
             <Link href="/about">About</Link>
-            <Link href="/technologies">Technologies</Link>
-            <Link href="/projects">Projects</Link>
             <Link href="/contact">Contact</Link>
           </nav>
           <span className="text-sm text-gray-500 dark:text-gray-400 text-center">
