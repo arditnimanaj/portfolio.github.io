@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaFacebook, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import arditImage from "../../../public/22.jpg"
 
 export default function AboutPage() {
   return (
@@ -9,7 +10,7 @@ export default function AboutPage() {
       </h1>
 
       <Image
-        src="/ardit.jpg"
+        src={arditImage}
         alt="Ardit Nimanaj"
         width={180}
         height={180}

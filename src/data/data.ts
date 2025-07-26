@@ -28,10 +28,6 @@ export const menuItems = [
     href: "/about",
     name: "About",
   },
-  {
-    href: "/contact",
-    name: "Contact",
-  },
 ];
 
 export const stackItems = [
