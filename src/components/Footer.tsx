@@ -17,7 +17,7 @@ export default function Footer() {
               <a href="https://github.com/arditnimanaj" target="_blank" rel="noopener noreferrer" className="text-indigo-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-400 transition">
                 <FaGithub size={20} />
               </a>
-              <a href="https://linkedin.com/in/arditnimanaj" target="_blank" rel="noopener noreferrer" className="text-indigo-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-400 transition">
+              <a href="https://www.linkedin.com/in/ardit-nimanaj-5224781b6/" target="_blank" rel="noopener noreferrer" className="text-indigo-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-400 transition">
                 <FaLinkedin size={20} />
               </a>
             </div>
