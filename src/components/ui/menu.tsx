@@ -29,6 +29,7 @@ export default function Menu({ items }: MenuProps) {
     <div>
       {isMobile ? (
         <>
+          {/* Open menu button */}
           {!open && (
             <button
               className="fixed top-4 left-4 z-50 p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 md:hidden"
@@ -37,17 +38,22 @@ export default function Menu({ items }: MenuProps) {
               <MenuIcon className="w-6 h-6" />
             </button>
           )}
+
+          {/* Backdrop */}
           {open && (
             <div
               className="fixed inset-0 z-40 bg-black/30"
               onClick={handleMenuClick}
             />
           )}
+
+          {/* Sidebar */}
           <aside
             className={`fixed top-0 left-0 h-full w-64 bg-white dark:bg-neutral-900 border-r border-gray-200 dark:border-neutral-800 z-50 transform transition-transform duration-300 ${
               open ? 'translate-x-0' : '-translate-x-full'
             }`}
           >
+            {/* Close button */}
             <div className="flex justify-end p-4 border-b border-gray-200 dark:border-neutral-800">
               <button
                 className="p-2 rounded-md bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800"
@@ -56,6 +62,8 @@ export default function Menu({ items }: MenuProps) {
                 <CloseIcon className="w-6 h-6" />
               </button>
             </div>
+
+            {/* Menu items */}
             <nav className="flex flex-col items-center px-4 py-6 space-y-4">
               {items.map((item) => (
                 <Link
@@ -76,6 +84,8 @@ export default function Menu({ items }: MenuProps) {
                 </Link>
               ))}
             </nav>
+
+            {/* Social media */}
             <div className="flex justify-center mt-auto pb-6">
               <SocialMedia />
             </div>

@@ -797,6 +797,24 @@ function SocialMedia() {
                 fileName: "[project]/src/components/ui/socialMedia.tsx",
                 lineNumber: 15,
                 columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: "https://drive.google.com/file/d/1UFfrjf7dot7nDjJiRbnoZ8rbwXrel9Ep/view?usp=sharing",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors shadow",
+                title: "Resume",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaFile"], {
+                    size: 22
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ui/socialMedia.tsx",
+                    lineNumber: 31,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/socialMedia.tsx",
+                lineNumber: 24,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
@@ -856,12 +874,12 @@ function Menu({ items }) {
                         className: "w-6 h-6"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/menu.tsx",
-                        lineNumber: 37,
+                        lineNumber: 38,
                         columnNumber: 15
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/menu.tsx",
-                    lineNumber: 33,
+                    lineNumber: 34,
                     columnNumber: 13
                 }, this),
                 open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -869,7 +887,7 @@ function Menu({ items }) {
                     onClick: handleMenuClick
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/menu.tsx",
-                    lineNumber: 41,
+                    lineNumber: 44,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -884,17 +902,17 @@ function Menu({ items }) {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/menu.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 62,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/menu.tsx",
-                                lineNumber: 52,
+                                lineNumber: 58,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/menu.tsx",
-                            lineNumber: 51,
+                            lineNumber: 57,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -920,40 +938,40 @@ function Menu({ items }) {
                                             children: item.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/menu.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 82,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/menu.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 75,
                                         columnNumber: 19
                                     }, this)
                                 }, item.name, false, {
                                     fileName: "[project]/src/components/ui/menu.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 69,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/menu.tsx",
-                            lineNumber: 59,
+                            lineNumber: 67,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex justify-center mt-auto pb-6",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$socialMedia$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/ui/menu.tsx",
-                                lineNumber: 80,
+                                lineNumber: 90,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/menu.tsx",
-                            lineNumber: 79,
+                            lineNumber: 89,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/menu.tsx",
-                    lineNumber: 46,
+                    lineNumber: 51,
                     columnNumber: 11
                 }, this)
             ]
@@ -976,17 +994,17 @@ function Menu({ items }) {
                         children: item.name
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/menu.tsx",
-                        lineNumber: 88,
+                        lineNumber: 98,
                         columnNumber: 15
                     }, this)
                 }, item.name, false, {
                     fileName: "[project]/src/components/ui/menu.tsx",
-                    lineNumber: 87,
+                    lineNumber: 97,
                     columnNumber: 13
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/components/ui/menu.tsx",
-            lineNumber: 85,
+            lineNumber: 95,
             columnNumber: 9
         }, this)
     }, void 0, false, {

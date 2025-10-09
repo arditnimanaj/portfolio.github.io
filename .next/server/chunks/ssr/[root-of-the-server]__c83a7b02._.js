@@ -386,7 +386,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$
 ;
 ;
 const metadata = {
-    title: "Ardit Nimanaj",
+    title: "ardit.dev",
     description: "Ardit Nimanaj Portfolio"
 };
 function RootLayout({ children }) {

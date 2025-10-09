@@ -11,7 +11,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
-      --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
@@ -394,10 +393,6 @@
     position: static;
   }
 
-  .sticky {
-    position: sticky;
-  }
-
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
@@ -464,10 +459,6 @@
 
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
-  }
-
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
   }
 
   .mt-12 {
@@ -606,10 +597,6 @@
 
   .w-44 {
     width: calc(var(--spacing) * 44);
-  }
-
-  .w-56 {
-    width: calc(var(--spacing) * 56);
   }
 
   .w-64 {
@@ -762,12 +749,6 @@
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
     margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
-  }
-
-  :where(.space-x-6 > :not(:last-child)) {
-    --tw-space-x-reverse: 0;
-    margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
-    margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .rounded-2xl {
@@ -1381,32 +1362,8 @@
   }
 
   @media (hover: hover) {
-    .hover\:text-black:hover {
-      color: var(--color-black);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-blue-800:hover {
-      color: var(--color-blue-800);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-blue-900:hover {
-      color: var(--color-blue-900);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:text-pink-500:hover {
       color: var(--color-pink-500);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-red-800:hover {
-      color: var(--color-red-800);
     }
   }
 
@@ -2071,32 +2028,8 @@
   }
 
   @media (hover: hover) {
-    .dark\:hover\:text-blue-300:is(.dark *):hover {
-      color: var(--color-blue-300);
-    }
-  }
-
-  @media (hover: hover) {
-    .dark\:hover\:text-blue-400:is(.dark *):hover {
-      color: var(--color-blue-400);
-    }
-  }
-
-  @media (hover: hover) {
     .dark\:hover\:text-pink-400:is(.dark *):hover {
       color: var(--color-pink-400);
-    }
-  }
-
-  @media (hover: hover) {
-    .dark\:hover\:text-red-400:is(.dark *):hover {
-      color: var(--color-red-400);
-    }
-  }
-
-  @media (hover: hover) {
-    .dark\:hover\:text-white:is(.dark *):hover {
-      color: var(--color-white);
     }
   }
 
@@ -2354,12 +2287,6 @@
 }
 
 @property --tw-space-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --tw-space-x-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;

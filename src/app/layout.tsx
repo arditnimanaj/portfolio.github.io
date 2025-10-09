@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ardit Nimanaj",
+  title: "ardit.dev",
   description: "Ardit Nimanaj Portfolio",
 };
 
