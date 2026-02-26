@@ -22,7 +22,7 @@ export default function SocialMedia() {
                 <FaLinkedin size={22} />
             </a>
             <a
-                href="https://drive.google.com/file/d/1UFfrjf7dot7nDjJiRbnoZ8rbwXrel9Ep/view?usp=sharing"
+                href="https://drive.google.com/file/d/1i0JBLy-L-k3OsPcyZXiGHBlOSkd18SzE/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors shadow"
