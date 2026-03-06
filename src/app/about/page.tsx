@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="flex items-center justify-center flex-col bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow hover:scale-[1.02] transition">
           <FaFacebook className="text-blue-600 dark:text-blue-400 text-3xl mb-2" />
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://www.facebook.com/ardit.nimanaj.7"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 dark:text-gray-100 font-semibold"
@@ -51,7 +51,7 @@ export default function AboutPage() {
         <div className="flex items-center justify-center flex-col bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow hover:scale-[1.02] transition">
           <FaGithub className="text-gray-900 dark:text-white text-3xl mb-2" />
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/arditnimanaj"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 dark:text-gray-100 font-semibold"
@@ -64,7 +64,7 @@ export default function AboutPage() {
         <div className="flex items-center justify-center flex-col bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow hover:scale-[1.02] transition">
           <FaLinkedin className="text-blue-700 dark:text-blue-300 text-3xl mb-2" />
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/ardit-nimanaj-5224781b6/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-800 dark:text-gray-100 font-semibold"
@@ -77,7 +77,7 @@ export default function AboutPage() {
         <div className="flex items-center justify-center flex-col bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow hover:scale-[1.02] transition">
           <FaEnvelope className="text-red-600 dark:text-red-400 text-3xl mb-2" />
           <a
-            href="mailto:your@email.com"
+            href="mailto:arditnimanaj@gmail.com"
             className="text-gray-800 dark:text-gray-100 font-semibold"
           >
             Email Me
