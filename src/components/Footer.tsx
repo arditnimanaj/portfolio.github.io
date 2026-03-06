@@ -29,7 +29,6 @@ export default function Footer() {
             <Link href="/">Home</Link>
             <Link href="/work">Work</Link>
             <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
           </nav>
           <span className="text-sm text-gray-500 dark:text-gray-400 text-center">
             Designed and built by{' '}
